@@ -39,8 +39,8 @@ const Image:React.FC<ImageProps> = ({image}) => {
           </div>
         }
       </div>
-      <div className="sm:hidden w-full h-[30px] flex justify-end items-start bg-transparent overflow-hidden bg-black">
-        <div onClick={()=>{setLiked(!liked)}} className="w-[40px] h-[40px] cursor-pointer overflow-hidden bg-black">
+      <div className="sm:hidden w-full h-[40px] px-2 flex justify-end items-center overflow-hidden bg-black">
+        <div onClick={()=>{setLiked(!liked)}} className="w-[30px] h-[30px] cursor-pointer overflow-hidden bg-black">
           {
             (liked)?
             <HeartFilled className=""/>
