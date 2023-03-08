@@ -1,11 +1,11 @@
 
 interface HeartOutlineIconProps{
-    className: string,
+    className?: string,
     width: number,
     height: number,
 }
 
-const HeartOutlineIcon:React.FC<HeartOutlineIconProps> = ({className, width, height}) => {
+const HeartOutlineIcon:React.FC<HeartOutlineIconProps> = ({width, height}) => {
   return (
     <svg 
         xmlns="http://www.w3.org/2000/svg" 

@@ -1,25 +1,29 @@
 import React from 'react'
 
-const HeartFilled = () => {
+interface HeartFilledProps {
+    className: string,
+}
+const HeartFilled:React.FC<HeartFilledProps> = ({className}) => {
   return (
     <svg 
         xmlns="http://www.w3.org/2000/svg" 
         width="60" 
         height="60"
         viewBox="0 0 130 130"
+        className={className}
     >
         <path 
             fill="rgb(219 39 119)" 
-            fill-rule="evenodd" 
+            fillRule="evenodd" 
             d="M12.65 16.684a12.488 12.488 0 0 0 0 17.653l1.758 1.765 17.588 17.653 17.587-17.653 1.759-1.765a12.488 12.488 0 0 0 0-17.653 12.376 12.376 0 0 0-17.588 0l-1.758 1.765-1.759-1.765a12.376 12.376 0 0 0-17.587 0z"
         />
         
         <path 
             fill="none" 
             stroke="#fff" 
-            stroke-linecap="round" 
-            stroke-linejoin="round" 
-            stroke-width="1.999" 
+            strokeLinecap="round" 
+            strokeLinejoin="round" 
+            strokeWidth="1.999" 
             d="M14.14 29.77a8.497 8.497 0 0 1 0-8.497 8.497 8.497 0 0 1 7.36-4.249" 
             opacity=".4"
         />

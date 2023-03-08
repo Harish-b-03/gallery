@@ -9,7 +9,17 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      animation: {
+        'likeAnimation': 'likeKeyframe 1s linear',
+      },
+      keyframes: {
+        likeKeyframe: {
+          '0%': {scale: 0, opacity: 1,},
+          '100%': {scale: 1, opacity: 0,}
+        },
+      },
+    },
   },
   plugins: [],
 }

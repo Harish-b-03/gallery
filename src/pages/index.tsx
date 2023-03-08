@@ -14,8 +14,8 @@ export default function Home() {
       </Head>
       <main className='w-full h-fit flex justify-center items-center box-border overflow-x-hidden'>
         <Masonry 
-          breakpointCols={{640: 1, 900: 4, default: 4}}
-          className='my-masonry-grid w-full px-[8px] mt-[68px] sm:w-4/5 sm:px-0 h-fit sm:mt-24'
+          breakpointCols={{450: 1, 640: 1, 900: 4, default: 4}}
+          className='my-masonry-grid sm:ml-[-30px] w-full px-[8px] mt-[68px] flex justify-center sm:justify-start items-center sm:items-start sm:w-4/5 sm:px-0 h-fit sm:mt-24'
           columnClassName="" 
           >
           {
