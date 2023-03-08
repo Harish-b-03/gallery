@@ -3,6 +3,7 @@ import { images } from '@/data'
 import Head from 'next/head'
 import Image from '@/components/Image'
 import Masonry from "react-masonry-css"
+import ImageContainer from '@/components/Image'
 
 export default function Home() {
   return (
@@ -21,7 +22,7 @@ export default function Home() {
           {
             images.map((image, index)=>{
               return(
-                <Image key={index} image={image}/>
+                <ImageContainer key={index} id={image.id} src={image.src}/>
               )
             })
           }
