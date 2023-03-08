@@ -26,7 +26,7 @@ const ImageContainer:React.FC<ImageProps> = ({id, src}) => {
   return (
     <div onMouseEnter={()=>setShowLike(true)} onMouseLeave={()=>setShowLike(false)} className={`relative mb-[10px] sm:ml-[10px] rounded-md overflow-hidden`}>
       <div onLoad={()=>{setLoaded(true); console.log("loaded" + id)}} onDoubleClick={()=>setLiked(!liked)} className="relative w-full h-full">
-        <LazyLoad height={300} offset={1000}>
+        <LazyLoad height={300} offset={1000} once={true}>
           <img
               src={src}
               alt={`${id}`}
