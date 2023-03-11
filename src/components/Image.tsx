@@ -26,13 +26,14 @@ const ImageContainer:React.FC<ImageProps> = ({id, src, setFocusImage, setShowIma
   }, [liked])
 
   return (
-    <div onClick={()=>{setFocusImage({id, src}); setShowImageViewer(true)}} onMouseEnter={()=>setShowLike(true)} onMouseLeave={()=>setShowLike(false)} className={`relative mb-[10px] sm:ml-[10px] rounded-md overflow-hidden`}>
+    <div onMouseEnter={()=>setShowLike(true)} onMouseLeave={()=>setShowLike(false)} className={`relative mb-[10px] sm:ml-[10px] rounded-md overflow-hidden`}>
       <div onLoad={()=>{setLoaded(true); console.log("loaded" + id)}} onDoubleClick={()=>setLiked(!liked)} className="relative w-full h-full">
         <LazyLoad height={300} offset={1000} once={true}>
           <img
               src={src}
               alt={`${id}`}
               loading='lazy'
+              onClick={()=>{setFocusImage({id, src}); setShowImageViewer(true)}}
               className='w-full rounded-md object-cover md:opacity-75 transition-all duration-300 cursor-pointer hover:opacity-100'   
           />
         </LazyLoad>
