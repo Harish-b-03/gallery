@@ -48,7 +48,7 @@ const ImageViewer:React.FC<ImageViewerProps> = ({setShowImageViewer, showImageVi
       
 
   return (
-    <div className={` ${showImageViewer?'opacity-1':'opacity-0 pointer-events-none'} fixed top-[60px] left-0 w-full h-[calc(100%-60px)] overflow-x-hidden transition-all duration-300 box-border bg-[black] z-40`}>
+    <div className={` ${showImageViewer?'opacity-1':'opacity-0 pointer-events-none'} fixed top-0 left-0 w-full h-[calc(100vh)] pt-[60px] overflow-x-hidden transition-all duration-300 box-border bg-[black] z-40`}>
         <div className="w-full h-3/4 flex justify-center items-center bg-black">
             <img 
                 src={focusImage.src} 

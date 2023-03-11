@@ -8,7 +8,7 @@ import { useState } from 'react'
 
 export default function Home() {
   const [showImageViewer, setShowImageViewer] = useState(true)
-  const [focusImage, setFocusImage] = useState<imageType>({id: 1, src: '/Images/Image-1.jpeg',})   
+  const [focusImage, setFocusImage] = useState<imageType>({id: 1, src: '/Images/Image-00001.jpeg',})   
 
   return (
     <Layout>
