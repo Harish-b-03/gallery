@@ -7,9 +7,11 @@ import LazyLoad from 'react-lazyload';
 export interface ImageProps{
   id: number,
   src: string,
+  setFocusImage: any,
+  setShowImageViewer: any,
 }
 
-const ImageContainer:React.FC<ImageProps> = ({id, src}) => {
+const ImageContainer:React.FC<ImageProps> = ({id, src, setFocusImage, setShowImageViewer}) => {
   const [liked, setLiked] = useState(false);
   const [showLike, setShowLike] = useState(false)
   const [animate, setAnimate] = useState(false)
@@ -24,7 +26,7 @@ const ImageContainer:React.FC<ImageProps> = ({id, src}) => {
   }, [liked])
 
   return (
-    <div onMouseEnter={()=>setShowLike(true)} onMouseLeave={()=>setShowLike(false)} className={`relative mb-[10px] sm:ml-[10px] rounded-md overflow-hidden`}>
+    <div onClick={()=>{setFocusImage({id, src}); setShowImageViewer(true)}} onMouseEnter={()=>setShowLike(true)} onMouseLeave={()=>setShowLike(false)} className={`relative mb-[10px] sm:ml-[10px] rounded-md overflow-hidden`}>
       <div onLoad={()=>{setLoaded(true); console.log("loaded" + id)}} onDoubleClick={()=>setLiked(!liked)} className="relative w-full h-full">
         <LazyLoad height={300} offset={1000} once={true}>
           <img

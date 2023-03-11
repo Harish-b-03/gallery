@@ -18,7 +18,7 @@ const HeartAnimated:React.FC<HeartAnimateIconProps> = ({className}) => {
                 </clipPath>
             </defs>
             <g 
-                clip-path="url(#a)" 
+                clipPath="url(#a)" 
                 transform="matrix(1.25 0 0 -1.25 0 47.5)">
                     <path 
                         fill="rgb(219 39 119)" 
