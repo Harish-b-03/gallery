@@ -55,7 +55,9 @@ const TermsConditions:React.FC<TermsConditionType> = ({setShowTerms, showTerms})
                             onChange={handleChange} 
                             className="cursor-pointer"
                         />
-                        &nbsp;I agree to the terms and conditions
+                        <span className="ml-2">
+                            I agree to the terms and conditions
+                        </span>
                     </label>
                 </div>
                 <button onClick={()=>{(checked)?setShowTerms(false):''}} className="px-5 py-2 md:py-0 md:px-3 outline outline-1 outline-gray-700 rounded-lg">Submit</button>
