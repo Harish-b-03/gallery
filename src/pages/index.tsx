@@ -5,11 +5,12 @@ import Masonry from "react-masonry-css"
 import ImageContainer from '@/components/Image'
 import ImageViewer from '@/components/ImageViewer'
 import { useState } from 'react'
+import TermsConditions from '@/components/terms_conditions'
 
 export default function Home() {
   const [showImageViewer, setShowImageViewer] = useState(false)
   const [focusImage, setFocusImage] = useState<imageType>({id: 1, src: '/Images/Image-00001.jpeg',})   
-
+  const [showTerms, setShowTerms] = useState(true)
   return (
     <Layout>
       <Head>
@@ -34,6 +35,10 @@ export default function Home() {
 
         {
           <ImageViewer showImageViewer={showImageViewer} setShowImageViewer={setShowImageViewer} focusImage={focusImage} setFocusImage={setFocusImage}/>
+        }
+
+        {
+          <TermsConditions showTerms={showTerms} setShowTerms={setShowTerms}/>
         }
       </main>
     </Layout>
