@@ -19,7 +19,7 @@ const TermsConditions:React.FC<TermsConditionType> = ({setShowTerms, showTerms})
                 Terms and Conditions
             </div>
             <div className="px-3 flex flex-col justify-start text-gray-400 h-3/4 overflow-scroll">
-            Please read these terms and conditions ("terms and conditions", "terms") carefully before using [website URL] website (“website”, "service") operated by [company name] ("us", 'we", "our").
+            Please read these terms and conditions - terms and conditions, terms carefully before using -website URL- website - website, service  - operated by [company name] (us, we, our).
             Conditions of use <br/><br/>
             By using this website, you certify that you have read and reviewed this Agreement and that you agree to comply with its terms. If you do not want to be bound by the terms of this Agreement, you are advised to stop using the website accordingly. [company name] only grants use and access of this website, its products, and its services to those who have accepted its terms.
             <br/><br/><b>Privacy policy</b><br/>
