@@ -5,7 +5,7 @@ import Masonry from "react-masonry-css"
 import ImageContainer from '@/components/Image'
 import ImageViewer from '@/components/ImageViewer'
 import { useState } from 'react'
-import TermsConditions from '@/components/terms_conditions'
+import TermsConditions from '@/components/TermsConditions'
 
 export default function Home() {
   const [showImageViewer, setShowImageViewer] = useState(false)
