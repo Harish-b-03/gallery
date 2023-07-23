@@ -10,7 +10,7 @@ import TermsConditions from '@/components/terms_conditions'
 export default function Home() {
   const [showImageViewer, setShowImageViewer] = useState(false)
   const [focusImage, setFocusImage] = useState<imageType>({id: 1, src: '/Images/Image-00001.jpeg',})   
-  const [showTerms, setShowTerms] = useState(true)
+  const [showTerms, setShowTerms] = useState(false)
   return (
     <Layout>
       <Head>
